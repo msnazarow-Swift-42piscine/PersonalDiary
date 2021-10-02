@@ -1,0 +1,16 @@
+PODS:
+  - sgertrud2021 (0.1.2)
+
+DEPENDENCIES:
+  - sgertrud2021 (>= 0.1.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - sgertrud2021
+
+SPEC CHECKSUMS:
+  sgertrud2021: c410287121a077ab0779b4d52fc54a73c552f461
+
+PODFILE CHECKSUM: 670a1c3eb616672b1d0ad25cbb0ea537fbd403a4
+
+COCOAPODS: 1.11.0

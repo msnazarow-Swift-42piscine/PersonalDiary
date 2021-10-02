@@ -25,9 +25,12 @@
 		3E7A07472707FB3200EF3D84 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A07392707FB3200EF3D84 /* SectionModel.swift */; };
 		3E7A07482707FB3200EF3D84 /* TableViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A073A2707FB3200EF3D84 /* TableViewContract.swift */; };
 		3E7A07492707FB3200EF3D84 /* ModelRepresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A073B2707FB3200EF3D84 /* ModelRepresentableProtocol.swift */; };
+		4CD0D423042251E02EFA1128 /* Pods_PersonalDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF401AC62B9C89872EA84F /* Pods_PersonalDiary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32DF401AC62B9C89872EA84F /* Pods_PersonalDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3898DBC0CDC4224F1F145CC1 /* Pods-PersonalDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalDiary.release.xcconfig"; path = "Target Support Files/Pods-PersonalDiary/Pods-PersonalDiary.release.xcconfig"; sourceTree = "<group>"; };
 		3E7A06FA2707FA1A00EF3D84 /* PersonalDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7A06FD2707FA1A00EF3D84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E7A06FF2707FA1A00EF3D84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		3E7A07392707FB3200EF3D84 /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		3E7A073A2707FB3200EF3D84 /* TableViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewContract.swift; sourceTree = "<group>"; };
 		3E7A073B2707FB3200EF3D84 /* ModelRepresentableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelRepresentableProtocol.swift; sourceTree = "<group>"; };
+		D85D2302EAED3A6334427225 /* Pods-PersonalDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalDiary.debug.xcconfig"; path = "Target Support Files/Pods-PersonalDiary/Pods-PersonalDiary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD0D423042251E02EFA1128 /* Pods_PersonalDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 			children = (
 				3E7A06FC2707FA1A00EF3D84 /* PersonalDiary */,
 				3E7A06FB2707FA1A00EF3D84 /* Products */,
+				D27FEE25598EC6C27D0EE303 /* Pods */,
+				4BB1E30DFB030217412A76E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +238,24 @@
 			path = Sections;
 			sourceTree = "<group>";
 		};
+		4BB1E30DFB030217412A76E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32DF401AC62B9C89872EA84F /* Pods_PersonalDiary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D27FEE25598EC6C27D0EE303 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D85D2302EAED3A6334427225 /* Pods-PersonalDiary.debug.xcconfig */,
+				3898DBC0CDC4224F1F145CC1 /* Pods-PersonalDiary.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E7A070E2707FA1F00EF3D84 /* Build configuration list for PBXNativeTarget "PersonalDiary" */;
 			buildPhases = (
+				6FC15D3F24FB00A873AB67A8 /* [CP] Check Pods Manifest.lock */,
 				3E7A06F62707FA1A00EF3D84 /* Sources */,
 				3E7A06F72707FA1A00EF3D84 /* Frameworks */,
 				3E7A06F82707FA1A00EF3D84 /* Resources */,
+				03CD85EAA863763D42DA66A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,6 +322,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03CD85EAA863763D42DA66A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalDiary/Pods-PersonalDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalDiary/Pods-PersonalDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalDiary/Pods-PersonalDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC15D3F24FB00A873AB67A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersonalDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E7A06F62707FA1A00EF3D84 /* Sources */ = {
@@ -452,6 +521,7 @@
 		};
 		3E7A070F2707FA1F00EF3D84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85D2302EAED3A6334427225 /* Pods-PersonalDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -480,6 +550,7 @@
 		};
 		3E7A07102707FA1F00EF3D84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3898DBC0CDC4224F1F145CC1 /* Pods-PersonalDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
