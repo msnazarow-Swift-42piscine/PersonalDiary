@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import ArticleManager
 
 final class SectionModel: SectionRowsRepresentable {
     var rows: [CellIdentifiable] = []
 
-    init(_ properties: [Model]) {
+    init(_ properties: [Article]) {
         properties.forEach { property in
             rows.append(CellModel(property))
         }

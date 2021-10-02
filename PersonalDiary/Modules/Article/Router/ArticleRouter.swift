@@ -1,5 +1,5 @@
 //
-//  AuthentificationRouter.swift
+//  ArticleRouter.swift
 //  PersonalDiary
 //
 //  Created by out-nazarov2-ms on 02.10.2021.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AuthentificationRouter: PresenterToRouterAuthentificationProtocol {
+class ArticleRouter: PresenterToRouterArticleProtocol {
 
     // MARK: - Properties
     weak var view: UIViewController!
@@ -19,8 +19,6 @@ class AuthentificationRouter: PresenterToRouterAuthentificationProtocol {
     }
 
     func routeToDiary() {
-        DispatchQueue.main.async {
-            self.view.navigationController?.setViewControllers([DiaryAssembly.createModule()], animated: true)
-        }
+        view.navigationController?.popViewController(animated: true)
     }
 }

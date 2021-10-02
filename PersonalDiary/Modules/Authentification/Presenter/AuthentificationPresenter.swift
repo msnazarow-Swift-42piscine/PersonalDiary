@@ -6,7 +6,7 @@
 //  
 //
 
-import Foundation
+import LocalAuthentication
 
 class AuthentificationPresenter: ViewToPresenterAuthentificationProtocol {
 
@@ -16,6 +16,12 @@ class AuthentificationPresenter: ViewToPresenterAuthentificationProtocol {
     let router: PresenterToRouterAuthentificationProtocol
     let dataSource:PresenterToDataSourceAuthentificationProtocol
 
+    let context = LAContext()
+    var compliton: (() -> Void)! {
+        didSet{
+            compliton()
+        }
+    }
     // MARK: Init
     init(view: PresenterToViewAuthentificationProtocol,
          interactor: PresenterToInteractorAuthentificationProtocol,
@@ -28,7 +34,23 @@ class AuthentificationPresenter: ViewToPresenterAuthentificationProtocol {
     }
 
     func viewDidLoad(){
-        print("I was presented")
+
+    }
+
+    func didButtonTapped() {
+        auth()
+    }
+    private func auth() {
+        let reason = NSLocalizedString("You should be authorized", comment: "reason for auth")
+        if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { success, error in
+                if !success || error != nil {
+                    print(error?.localizedDescription)
+                } else {
+                    self.router.routeToDiary()
+                }
+            }
+        }
     }
 }
 

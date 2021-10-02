@@ -6,7 +6,9 @@ platform :ios, '12.0'
 target 'PersonalDiary' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'sgertrud2021', '>= 0.1.2'
+  pod 'sgertrud2021', '>= 0.1.8'
+  pod 'UITextView+Placeholder'
+  pod 'IQKeyboardManagerSwift'
   # Pods for PersonalDiary
 
 end

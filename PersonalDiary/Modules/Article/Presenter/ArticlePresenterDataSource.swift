@@ -1,5 +1,5 @@
 //
-//  AuthentificationPresenterDataSource.swift
+//  ArticlePresenterDataSource.swift
 //  PersonalDiary
 //
 //  Created by out-nazarov2-ms on 02.10.2021.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class AuthentificationPresenterDataSource: NSObject, PresenterToDataSourceAuthentificationProtocol {
+class ArticlePresenterDataSource: NSObject, PresenterToDataSourceArticleProtocol {
 
     // MARK: Properties
-    weak var presenter: CellToPresenterAuthentificationProtocol!
+    weak var presenter: CellToPresenterArticleProtocol!
 
     private var sections: [SectionModel] = []
 
@@ -36,5 +36,4 @@ class AuthentificationPresenterDataSource: NSObject, PresenterToDataSourceAuthen
         cell.model = model
         return cell
     }
-
 }

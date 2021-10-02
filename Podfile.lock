@@ -1,16 +1,24 @@
 PODS:
-  - sgertrud2021 (0.1.2)
+  - IQKeyboardManagerSwift (6.5.6)
+  - sgertrud2021 (0.1.8)
+  - "UITextView+Placeholder (1.4.0)"
 
 DEPENDENCIES:
-  - sgertrud2021 (>= 0.1.1)
+  - IQKeyboardManagerSwift
+  - sgertrud2021 (>= 0.1.8)
+  - "UITextView+Placeholder"
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - IQKeyboardManagerSwift
     - sgertrud2021
+    - "UITextView+Placeholder"
 
 SPEC CHECKSUMS:
-  sgertrud2021: c410287121a077ab0779b4d52fc54a73c552f461
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  sgertrud2021: e82cc45adf9a2464a38c55612ff55e322d1cdaf8
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: 670a1c3eb616672b1d0ad25cbb0ea537fbd403a4
+PODFILE CHECKSUM: 172df1a9257972912ce673ae46255ee6269c7292
 
 COCOAPODS: 1.11.0

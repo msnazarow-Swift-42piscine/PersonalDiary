@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import ArticleManager
 
 class AuthentificationInteractor: PresenterToInteractorAuthentificationProtocol {
 
-   
+  
 }

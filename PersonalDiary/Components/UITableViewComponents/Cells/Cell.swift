@@ -9,7 +9,7 @@
 import UIKit
 
 class Cell: UITableViewCell, ModelRepresentable {
-    weak var presenter: CellToPresenterAuthentificationProtocol!
+    weak var presenter: CellToPresenterDiaryProtocol!
 
     var model: Identifiable? {
         didSet {
