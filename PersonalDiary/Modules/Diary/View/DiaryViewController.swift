@@ -21,6 +21,7 @@ class DiaryViewController: UITableViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         presenter.viewWillAppear()
     }
 

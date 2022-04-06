@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3E7A06FE2707FA1A00EF3D84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A06FD2707FA1A00EF3D84 /* AppDelegate.swift */; };
-		3E7A07002707FA1A00EF3D84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A06FF2707FA1A00EF3D84 /* SceneDelegate.swift */; };
 		3E7A07072707FA1F00EF3D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A07062707FA1F00EF3D84 /* Assets.xcassets */; };
 		3E7A070A2707FA1F00EF3D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A07082707FA1F00EF3D84 /* LaunchScreen.storyboard */; };
 		3E7A073C2707FB3200EF3D84 /* AuthentificationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A07222707FB3200EF3D84 /* AuthentificationContract.swift */; };
@@ -25,7 +24,6 @@
 		3E7A07472707FB3200EF3D84 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A07392707FB3200EF3D84 /* SectionModel.swift */; };
 		3E7A07482707FB3200EF3D84 /* TableViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A073A2707FB3200EF3D84 /* TableViewContract.swift */; };
 		3E7A07492707FB3200EF3D84 /* ModelRepresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A073B2707FB3200EF3D84 /* ModelRepresentableProtocol.swift */; };
-		3E7A074B2708006100EF3D84 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A074A2708006100EF3D84 /* KeyboardLayoutConstraint.swift */; };
 		3E7A07682708270800EF3D84 /* ArticleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A074E2708270800EF3D84 /* ArticleContract.swift */; };
 		3E7A07692708270800EF3D84 /* ArticleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A07502708270800EF3D84 /* ArticleAssembly.swift */; };
 		3E7A076A2708270800EF3D84 /* ArticlePresenterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A07522708270800EF3D84 /* ArticlePresenterDataSource.swift */; };
@@ -51,7 +49,6 @@
 		3E2DD9AA2708E0F00057C85C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3E7A06FA2707FA1A00EF3D84 /* PersonalDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7A06FD2707FA1A00EF3D84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3E7A06FF2707FA1A00EF3D84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3E7A07062707FA1F00EF3D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E7A07092707FA1F00EF3D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E7A070B2707FA1F00EF3D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +66,6 @@
 		3E7A07392707FB3200EF3D84 /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		3E7A073A2707FB3200EF3D84 /* TableViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewContract.swift; sourceTree = "<group>"; };
 		3E7A073B2707FB3200EF3D84 /* ModelRepresentableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelRepresentableProtocol.swift; sourceTree = "<group>"; };
-		3E7A074A2708006100EF3D84 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		3E7A074E2708270800EF3D84 /* ArticleContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleContract.swift; sourceTree = "<group>"; };
 		3E7A07502708270800EF3D84 /* ArticleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleAssembly.swift; sourceTree = "<group>"; };
 		3E7A07522708270800EF3D84 /* ArticlePresenterDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlePresenterDataSource.swift; sourceTree = "<group>"; };
@@ -124,24 +120,14 @@
 			children = (
 				3E7A07332707FB3200EF3D84 /* Components */,
 				3E7A072E2707FB3200EF3D84 /* Contract */,
-				3E7A071E2707FB3200EF3D84 /* Entities */,
 				3E7A07302707FB3200EF3D84 /* Extentions */,
 				3E7A071F2707FB3200EF3D84 /* Modules */,
-				3E7A07322707FB3200EF3D84 /* Services */,
 				3E7A06FD2707FA1A00EF3D84 /* AppDelegate.swift */,
-				3E7A06FF2707FA1A00EF3D84 /* SceneDelegate.swift */,
 				3E7A07062707FA1F00EF3D84 /* Assets.xcassets */,
 				3E7A07082707FA1F00EF3D84 /* LaunchScreen.storyboard */,
 				3E7A070B2707FA1F00EF3D84 /* Info.plist */,
 			);
 			path = PersonalDiary;
-			sourceTree = "<group>";
-		};
-		3E7A071E2707FB3200EF3D84 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		3E7A071F2707FB3200EF3D84 /* Modules */ = {
@@ -228,17 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				3E7A07312707FB3200EF3D84 /* UIWindow+Ext.swift */,
-				3E7A074A2708006100EF3D84 /* KeyboardLayoutConstraint.swift */,
 				3E7A07782708605200EF3D84 /* Date+Ext.swift */,
 			);
 			path = Extentions;
-			sourceTree = "<group>";
-		};
-		3E7A07322707FB3200EF3D84 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		3E7A07332707FB3200EF3D84 /* Components */ = {
@@ -538,7 +516,6 @@
 				3E7A073F2707FB3200EF3D84 /* AuthentificationPresenterDataSource.swift in Sources */,
 				3E7A07742708270800EF3D84 /* DiaryInteractor.swift in Sources */,
 				3E7A073D2707FB3200EF3D84 /* AuthentificationAssembly.swift in Sources */,
-				3E7A074B2708006100EF3D84 /* KeyboardLayoutConstraint.swift in Sources */,
 				3E7A07412707FB3200EF3D84 /* AuthentificationInteractor.swift in Sources */,
 				3E7A076D2708270800EF3D84 /* ArticleInteractor.swift in Sources */,
 				3E7A073C2707FB3200EF3D84 /* AuthentificationContract.swift in Sources */,
@@ -561,7 +538,6 @@
 				3E7A07792708605200EF3D84 /* Date+Ext.swift in Sources */,
 				3E7A07692708270800EF3D84 /* ArticleAssembly.swift in Sources */,
 				3E7A07482707FB3200EF3D84 /* TableViewContract.swift in Sources */,
-				3E7A07002707FA1A00EF3D84 /* SceneDelegate.swift in Sources */,
 				3E7A07422707FB3200EF3D84 /* AuthentificationRouter.swift in Sources */,
 				3E7A076B2708270800EF3D84 /* ArticlePresenter.swift in Sources */,
 				3E7A076C2708270800EF3D84 /* ArticleViewController.swift in Sources */,
