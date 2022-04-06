@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string></string>
+	<string>Please</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Please continue with FaceId</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>

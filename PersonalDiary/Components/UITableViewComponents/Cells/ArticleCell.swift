@@ -10,7 +10,7 @@ import UIKit
 class ArticleCell: Cell {
     let gap: CGFloat = 10
 
-    let image: UIImageView = {
+    let articleImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
 //        imageView.heightAnchor.constraint(equalToConstant: 100 * verticalTranslation).isActive = true
@@ -50,7 +50,7 @@ class ArticleCell: Cell {
     lazy var vstack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [
             title,
-            image,
+			articleImage,
             content,
             updated,
             created
@@ -77,9 +77,9 @@ class ArticleCell: Cell {
         }
         
         if let data = model.image {
-            image.image = UIImage(data: data)
+			articleImage.image = UIImage(data: data)
         } else {
-            image.image = nil
+			articleImage.image = nil
         }
     }
 
@@ -89,7 +89,7 @@ class ArticleCell: Cell {
 
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            image.heightAnchor.constraint(lessThanOrEqualToConstant: 300 * verticalTranslation),
+			articleImage.heightAnchor.constraint(lessThanOrEqualToConstant: 300 * verticalTranslation),
             vstack.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: gap),
             vstack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: gap),
             vstack.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -gap),
